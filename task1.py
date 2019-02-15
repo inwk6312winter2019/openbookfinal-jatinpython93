@@ -54,5 +54,66 @@ def character_word_count(hist):
 			t.append(h)		# Empty dictionarty being added with key and value pair
 
 
+# Counting the no of words in the form of a tuple
+
+
+def starts_with_vow(hist):
+	for word in tuple(hist.items):
+		if word == "a" or word == "e" or word =="i" or word =="o" or word== "u":    # Checking for vowels 
+			return sum(word)
+		else:
+			print("Vowels not found \n")		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
