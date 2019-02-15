@@ -43,4 +43,16 @@ def sorted_words(hist):
 		t.sort(reverse==true)
 	return t
 
- 
+# Counting the words and character as values
+
+def character_word_count(hist):
+	h = dict()		# Empty Dictionary
+	hist[word] = key
+	for x in hist:
+		value = x
+		for key,x in hist.items():
+			t.append(h)		# Empty dictionarty being added with key and value pair
+
+
+
+
