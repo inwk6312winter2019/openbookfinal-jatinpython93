@@ -30,6 +30,8 @@ import json
 controller='devnetapi.cisco.com/sandbox/apic_em'
 
 def getTicket():
+ 
+	
 	# put the ip address or dns of your apic-em controller in this url
 	url = "https://" + controller + "/api/v1/ticket"
 
@@ -54,6 +56,9 @@ def getTicket():
 
 
 def getNetworkDevices(ticket):
+	
+	my_dict = dict()			# Creting empty dictionary
+
 	# URL for network-device REST API call to get list of exisiting devices on the network.
 	url = "https://" + controller + "/api/v1/network-device"
 
@@ -74,6 +79,8 @@ def getNetworkDevices(ticket):
 	#Iterate through network device data and print the id and series name of each device
 	for i in r_json["response"]:
 		print(i["id"] + "   " + '{:53}'.format(i["series"]) + "  " + i["reachabilityStatus"])
+		
+	for key in json.dumps:
 		
 
 
