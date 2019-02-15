@@ -23,5 +23,13 @@ my_book3 = funk(Book3.txt)
 # First task says to count unique no of words in the txt file
 
 def unique_words(hist):
-	return sum(list(hist.values()))			# returns the no of unique words from the histogram
+	return sum(list(len(hist)))			# returns the no of unique words(Items from a dictionary) from the histogram
+
+
+
+# To count the total no of words in the histogram and converting it to a list using type casting ***
+
+def count_the_article(hist):
+	return (list(hist.values())) 			# Count the total no of values from a dictionary and using type casting convert it to a list
+
 
