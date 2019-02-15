@@ -33,3 +33,14 @@ def count_the_article(hist):
 	return (list(hist.values())) 			# Count the total no of values from a dictionary and using type casting convert it to a list
 
 
+# To return the words in descending order and return in the form of a list ***
+
+
+def sorted_words(hist):
+	t=[]
+	for key,values in hist.items():
+		t.append(value,keys)
+		t.sort(reverse==true)
+	return t
+
+ 
